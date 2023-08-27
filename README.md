@@ -1,2 +1,2 @@
-# bike-rental-api
-Projeto locação de bicicleta para CPTM.
+# bike-spot-api
+Projeto locação de vaga do bicicletário da CPTM.

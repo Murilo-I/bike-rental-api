@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.gov.sp.cptm</groupId>
-	<artifactId>BikeRental</artifactId>
+	<artifactId>BikeSpot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BikeRental</name>
-	<description>Projeto locação de bicicleta para CPTM.</description>
+	<name>BikeSpotReservation</name>
+	<description>Projeto locação de vaga do bicicletário da CPTM.</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
