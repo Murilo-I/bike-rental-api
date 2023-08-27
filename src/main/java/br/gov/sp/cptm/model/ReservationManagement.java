@@ -16,7 +16,7 @@ public class ReservationManagement {
     private Integer reservationId;
     @ManyToOne
     @JoinColumn(name = "userId")
-    private User user;
+    private Usuario user;
     @ManyToOne
     @JoinColumn(name = "stationId")
     private BikeRack station;

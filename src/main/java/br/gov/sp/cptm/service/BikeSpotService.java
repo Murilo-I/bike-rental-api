@@ -4,7 +4,7 @@ import br.gov.sp.cptm.dto.BaseResponse;
 import br.gov.sp.cptm.dto.ReservationRequest;
 import br.gov.sp.cptm.model.BikeRack;
 import br.gov.sp.cptm.model.ReservationManagement;
-import br.gov.sp.cptm.model.User;
+import br.gov.sp.cptm.model.Usuario;
 import br.gov.sp.cptm.repository.BikeRackRepository;
 import br.gov.sp.cptm.repository.ReservationManagementRepository;
 import br.gov.sp.cptm.repository.UserRepository;
@@ -32,7 +32,7 @@ public class BikeSpotService {
 
 
     public BaseResponse reserveBikeSpot(ReservationRequest request) {
-        User user = userRepository.findById(request.getUserId())
+        Usuario user = userRepository.findById(request.getUserId())
                 .orElseThrow(() -> new GenericException("User not found"));
         BikeRack bikeRack = bikeRepository.findById(request.getStationId())
                 .orElseThrow(() -> new GenericException("Station not found"));
